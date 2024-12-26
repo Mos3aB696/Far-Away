@@ -39,7 +39,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -57,8 +57,12 @@ h1 {
   gap: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .add-form {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .add-for div {
     flex-direction: column;
   }
 }
@@ -66,6 +70,12 @@ h1 {
 h3 {
   margin-right: 1.6rem;
   font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 button,
@@ -80,6 +90,15 @@ input {
   font-weight: 700;
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  button,
+  select,
+  input {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
 }
 
 .add-form button {
@@ -99,6 +118,13 @@ input {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .list {
+    padding: 2rem 0;
+    gap: 1.6rem;
+  }
+}
+
 .actions button,
 .list select {
   text-transform: uppercase;
@@ -106,6 +132,14 @@ input {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .actions button,
+  .list select {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.8rem;
+  }
 }
 
 .list ul {
@@ -123,6 +157,16 @@ input {
   display: flex;
   align-items: center;
   gap: 1rem 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .list ul {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .list li {
+    gap: 0.5rem 0.4rem;
+  }
 }
 
 input[type="checkbox"] {
@@ -152,5 +196,6 @@ input[type="checkbox"] {
 @media (max-width: 768px) {
   .stats {
     font-size: 1.5rem;
+    padding: 1rem 0.5rem;
   }
 }
